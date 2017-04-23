@@ -38,7 +38,7 @@
 </head>
 <body class="sidebar-disabled navbar-fixed">
 <div id="app" class="main-wrap full">
-    @include('layouts.menu')
+    @include('layouts.navigation')
 
     <div class="content">
 

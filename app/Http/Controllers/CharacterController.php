@@ -2,18 +2,15 @@
 
 
 use App\Enum\BagType;
-use App\Enum\CraftingType;
-use App\Enum\EquipType;
 use App\Enum\SetType;
 use App\Model\Character;
 use App\Model\ItemStyle;
 use App\Model\Set;
-use App\Model\UserItem;
+use App\Model\SkillLine;
 use App\Repository\CraftingRepository;
-use HeppyKarlsson\Meta\Model\Meta;
 use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Cache;
 
 class CharacterController
 {
@@ -46,6 +43,27 @@ class CharacterController
 
         $character->restore();
         return redirect()->back();
+    }
+
+    public function skills(Character $character, SkillLine $skillLine) {
+        $skilltypes = SkillLine::where('lang', App::getLocale())
+            ->get()
+            ->groupBy('skilltypeEnum');
+
+        $showSkillLine = $skillLine;
+
+        $abilities = $showSkillLine->abilities()
+            ->whereNull('parent_id')
+            ->where('lang', App::getLocale())
+            ->with('morphs')
+            ->orderBy('index')
+            ->orderBy('morph')
+            ->get();
+
+        $characterAbilities = $character->abilities->keyBy('id');
+        $spentSkillpoints = $characterAbilities->pluck('pivot')->sum('skillpoints');
+
+        return view('character.skills', compact('character', 'skilltypes', 'showSkillLine', 'abilities', 'characterAbilities', 'spentSkillpoints'));
     }
 
     public function index() {
@@ -92,6 +110,7 @@ class CharacterController
             $user = Auth::user();
             $characters = $user->characters;
         }
+
         $researchGrid = $craftingRepository->researchGrid($user, $craftingTypeEnum, $character);
 
         $craftingTraits = $character->craftingTraits()

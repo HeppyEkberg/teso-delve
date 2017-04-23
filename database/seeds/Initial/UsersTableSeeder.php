@@ -16,6 +16,7 @@ class UsersTableSeeder extends Seeder
             'name' => 'Heppy',
             'email' => 'tehheppy@gmail.com',
             'password' => bcrypt('secret'),
+            'created_at' => \Carbon\Carbon::now(),
         ]);
     }
 }

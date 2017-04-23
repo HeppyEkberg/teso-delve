@@ -28,7 +28,13 @@
                                 Having trouble finding your log? Find your Addon folder and it'll be a folder next to it.</li>
                         </ul>
 
-                        <div id="importDropzone" url="{{route('import.upload')}}" class="{{Auth::check() ? '' : 'dropzoneDisabled'}}">
+                        @if(isset($importGroup) and !is_null($importGroup) and false)
+                            @include('import.import-group')
+
+                            @include('import.import-group-alternative')
+                        @endif
+
+                        <div id="importDropzone" url="{{route('import.upload')}}" class="{{Auth::check() ? '' : 'dropzoneDisabled'}} panel panel-default no-bg b-a-2 b-gray b-dashed m-b-0">
                             <div class="dropzone-message message-default">
                                 @if(Auth::check())
                                     <p><i class="fa fa-upload" aria-hidden="true" title="Item worn"></i> Drop your TesoDelve.lua file here to import all your information. <br>After that you're all set to get organized with TESO Delve!</p>

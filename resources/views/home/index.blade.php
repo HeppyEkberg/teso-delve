@@ -105,22 +105,22 @@
             <div class="col-md-12 m-t-3 m-b-3">
                 <div class="row text-center">
                     <div class="col-md-3">
-                        <h4>{{$setsCount}}</h4>
+                        <h4>{{$information['sets']}}</h4>
                         <p>Total sets recorded</p>
                     </div>
 
                     <div class="col-md-3">
-                        <h4>{{$characterCount}}</h4>
+                        <h4>{{$information['characters']}}</h4>
                         <p>Characters using Teso-Delve.com</p>
                     </div>
 
                     <div class="col-md-3">
-                        <h4>{{number_format($motifCount)}}</h4>
+                        <h4>{{number_format($information['motifs'])}}</h4>
                         <p>Motifs learnt across all characters</p>
                     </div>
 
                     <div class="col-md-3">
-                        <h4>{{number_format($itemCount)}}</h4>
+                        <h4>{{number_format($information['items'])}}</h4>
                         <p>Items found in ESO sofar</p>
                     </div>
                 </div>

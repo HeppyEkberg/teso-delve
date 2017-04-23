@@ -1,0 +1,9 @@
+[program:laravel-worker]
+process_name=%(program_name)s_%(process_num)02d
+command=php home/vagrant/Code/eso/artisan queue:work database --queue=invinitialize,inventory,invfinalize,default --sleep=3 --tries=3
+autostart=true
+autorestart=true
+user=root
+numprocs=5
+redirect_stderr=true
+stdout_logfile=home/vagrant/Code/logs/eso/worker.log

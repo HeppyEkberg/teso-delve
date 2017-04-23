@@ -18,13 +18,16 @@
            </div>
            <div class="col-md-3">
                <h4>Contact</h4>
-               <p>You can get in touch with us by mailing the following email</p>
-               <p><a href="mailto:{{config('constants.mail')}}">{{config('constants.mail')}}</a></p>
+               <p>You can contact us by using the links below:</p>
+               <ul class="list-unstyled">
+                   <li><a href="mailto:{{config('constants.mail')}}">{{config('constants.mail')}}</a></li>
+                   <li><a href="{{config('constants.discord')}}" title="Discord">Discord</a></li>
+               </ul>
            </div>
            <div class="col-md-3">
             <h4>Links</h4>
                <ul class="list-unstyled">
-                   <li><a href="http://www.deltiasgaming.com" target="_blank">Delitasgaming</a></li>
+                   <li><a href="http://www.deltiasgaming.com" target="_blank">Deltiasgaming</a></li>
                </ul>
            </div>
 

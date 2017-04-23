@@ -1,19 +1,17 @@
 @extends('layouts.app')
 
 @section('meta-title')
-    {{$set->name}} {{ $set->setTypeEnum == \App\Enum\SetType::MONSTER ? "monster " : '' }}set - @parent
-@endsection
+{{$set->name}} {{ $set->setTypeEnum == \App\Enum\SetType::MONSTER ? "monster " : '' }}set - @parent @endsection
 
 @section('meta-description')
-    {{ trans('description.set.' . $set->setTypeEnum, [
-        'name' => $set->name,
-        'dungeons' => implode(', ', $set->dungeons->pluck('name')->toArray()),
-        'traits' => $set->getMeta('crafting_traits_needed'),
-        'zones' => rtrim(implode(', ', $set->zones->pluck('name')->toArray())),
-        'dungeon' => $set->dungeons->count() > 0 ? $set->dungeons->first()->name : '',
-        'pledgeChest' => trans('eso.pledgeChest.'.$set->getMeta('monster_chest'))
-    ])}}
-@endsection
+{{ trans('description.set.' . $set->setTypeEnum, [
+    'name' => $set->name,
+    'dungeons' => implode(', ', $set->dungeons->pluck('name')->toArray()),
+    'traits' => $set->getMeta('crafting_traits_needed'),
+    'zones' => rtrim(implode(', ', $set->zones->pluck('name')->toArray())),
+    'dungeon' => $set->dungeons->count() > 0 ? $set->dungeons->first()->name : '',
+    'pledgeChest' => trans('eso.pledgeChest.'.trim($set->getMeta('monster_chest')))
+])}}@endsection
 
 @section('content')
     <div class="container">
@@ -22,11 +20,11 @@
             <div class="col-md-12">
                 <div class="">
                     <div class="">
-                        <div class="btn-group pull-right" role="group" aria-label="...">
+                        <div class="btn-group pull-right" role="group">
                             @if($user)
-                                @if(Gate::allows('update', $set))
+                                @role('admin')
                                     <a href="{{route('set.edit', [$set->slug])}}" class="btn btn-default btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-                                @endif
+                                @endrole
                                 @if($isFavourite)
                                     <a href="{{route('set.favourite', [$set])}}" class="btn btn-default btn-xs setFavourite"><i class="fa fa-star text-legendary favouriteIcon" aria-hidden="true"></i></a>
                                 @else

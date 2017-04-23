@@ -8,7 +8,7 @@
     @foreach($pages as $page)
         <url>
             <loc>{{(string) $page}}</loc>
-            <changefreq>daily</changefreq>
+            <changefreq>{{$page->changeFrequency()}}</changefreq>
         </url>
     @endforeach
 </urlset>

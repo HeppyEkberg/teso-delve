@@ -42,6 +42,7 @@ class Zones
         25 => ['id' => 25, 'name' => "Hew's Bane", 'Alliance' => Alliance::NEUTRAL, 'slug' => 'hews-bane'],
         26 => ['id' => 26, 'name' => "Murkmire", 'Alliance' => Alliance::NEUTRAL, 'slug' => 'murkmire'],
         27 => ['id' => 27, 'name' => "Wrothgar", 'Alliance' => Alliance::NEUTRAL, 'slug' => 'wrothgar'],
+        28 => ['id' => 28, 'name' => "Vvardenfell", 'Alliance' => Alliance::NEUTRAL, 'slug' => 'vvardenfell'],
 
     ];
 

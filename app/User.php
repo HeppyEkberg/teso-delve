@@ -4,19 +4,20 @@ namespace App;
 
 use App\Model\Character;
 use App\Model\Guild;
-use App\Model\GuildMember;
 use App\Model\Item;
 use App\Model\UserItem;
 use App\Model\UserSetFavourite;
 use HeppyKarlsson\Meta\Traits\Meta;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Laratrust\Traits\LaratrustUserTrait;
 
 /**
  * @property string lang
  */
 class User extends Authenticatable
 {
+    use LaratrustUserTrait;
     use Notifiable,
         Meta;
 
@@ -40,6 +41,7 @@ class User extends Authenticatable
 
     protected $dates = [
         'seen_at',
+        'dumpUploaded_at'
     ];
 
     public function items() {

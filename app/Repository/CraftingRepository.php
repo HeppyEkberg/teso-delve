@@ -3,6 +3,7 @@
 use App\Enum\ItemStyleChapter;
 use App\Enum\ItemTrait;
 use App\Model\CraftingTrait;
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Facades\Auth;
 
@@ -18,6 +19,14 @@ class CraftingRepository
             ->sort();
 
         $characters = Auth::id() == $character->userId ? $user->characters : new Collection([$character]);
+
+        /*
+         * Update the characters crafting traits that has finished researching.
+         */
+        CraftingTrait::whereIn('characterId', $characters->pluck('id'))
+            ->where('researchDone_at', '<=', Carbon::now())
+            ->where('isKnown', 0)
+            ->update(['isKnown' => 1]);
 
         $characters->load(['craftingTraits' => function($query) use($craftingEnumType) {
             $query->where('craftingTypeEnum', $craftingEnumType);

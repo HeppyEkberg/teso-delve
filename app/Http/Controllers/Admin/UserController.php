@@ -1,17 +1,17 @@
 <?php namespace App\Http\Controllers\Admin;
 
-use App\Enum\BagType;
 use App\Http\Controllers\Controller;
+use App\Model\Role\Role;
 use App\User;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
-use Illuminate\Support\Facades\Storage;
 
 class UserController extends Controller
 {
 
     public function index() {
-        $users = User::with('characters')->get();
+        $users = User::with(['characters', 'roles'])->get();
         return view('admin.users.index', compact('users'));
     }
 
@@ -29,6 +29,23 @@ class UserController extends Controller
         }
 
         return response()->download($file);
+    }
+
+    public function edit(User $user) {
+        $roles = Role::all();
+        $userRoles = $user->roles->keyBy('id');
+        return view('admin.users.edit', compact('user', 'roles', 'userRoles'));
+    }
+
+    public function update(Request $request, User $user) {
+        $addRole = $request->get('role');
+
+        $user->roles()->detach();
+        foreach($addRole as $role_id => $role) {
+            $user->roles()->attach($role_id);
+        }
+
+        return redirect()->back();
     }
 
 }

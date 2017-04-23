@@ -39,7 +39,14 @@
                                         @endif
                                     </td>
                                     <td class="valign-middle">{!! nl2br($itemStyle->location)!!}</td>
-                                    <td class="min-width nowrap text-center"><img src="{{$itemStyle->image}}" class="icon-size-40" title="{{$itemStyle->material}}">
+                                    <td class="min-width nowrap text-center">
+                                        @if(!is_null($itemStyle->material_id))
+                                            <a href="{{route('item.show', [$itemStyle->materialItem])}}">
+                                                @include('item.image', ['item' => $userMaterials->has($itemStyle->material_id) ? $userMaterials->get($itemStyle->material_id) : $itemStyle->materialItem])
+                                            </a>
+                                        @elseif(!empty($itemStyle->image))
+                                            <img src="{{$itemStyle->image}}" class="icon-size-40" title="{{$itemStyle->material}}">
+                                        @endif
                                         <p>{{$itemStyle->material}}</p>
                                     </td>
                                 </tr>

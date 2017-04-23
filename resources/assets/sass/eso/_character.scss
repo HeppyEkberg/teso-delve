@@ -34,3 +34,26 @@
     list-style-type: none;
   }
 }
+
+
+.ability-icon {
+  &.ability-locked {
+    img {
+      opacity: 0.2;
+    }
+
+    .fa {
+      display: inline-block;
+      position: absolute;
+      top: 11px;
+      left: 27px;
+      color: white;
+    }
+  }
+
+  .fa {
+    display: none;
+  }
+
+
+}

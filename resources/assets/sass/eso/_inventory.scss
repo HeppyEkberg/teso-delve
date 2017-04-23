@@ -6,15 +6,6 @@
     margin-bottom: 5px;
   }
 
-  .slot-count {
-    position:absolute;
-    color: white;
-    margin-top: -17px;
-    width: 40px;
-    text-align: right;
-
-  }
-
 }
 
 .filter-icons {
@@ -26,4 +17,12 @@
     padding: 0px;
   }
 
+}
+
+.slot-count {
+  position: absolute;
+  margin-top: 23px;
+  width: 38px;
+  text-align: right;
+  font-weight: bold;
 }

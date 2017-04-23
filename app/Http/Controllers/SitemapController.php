@@ -1,6 +1,7 @@
 <?php namespace App\Http\Controllers;
 
 use App\Model\Dungeon;
+use App\Model\Item;
 use App\Model\ItemStyle;
 use App\Model\Set;
 use App\Objects\Zones;
@@ -59,6 +60,20 @@ class SitemapController
         });
 
         return Response::view('sitemap.show', compact('pages'))->header('Content-Type', 'text/xml');
+   }
+
+   public function items() {
+       $pages = Cache::remember('items-sitemap-xml', 60*24, function() {
+           $pages = new Collection();
+
+           foreach(Item::all() as $item) {
+               $pages->add(Page::route('item.show', [$item]));
+           }
+
+           return $pages;
+       });
+
+       return Response::view('sitemap.show', compact('pages'))->header('Content-Type', 'text/xml');
    }
 
 

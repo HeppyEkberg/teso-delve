@@ -33,7 +33,7 @@
                                 <hr>
 
                                 @foreach($armors as $armorType => $armorsList)
-                                    <h4>{{trans('enums.ArmorType.' . $armorType)}} i</h4>
+                                    <h4>{{trans('enums.ArmorType.' . $armorType)}}</h4>
                                     <ul class="list-inline">
                                         @foreach($armorsList->sortBy('equipType')->groupBy('equipType') as $key => $armorsListByEquipType)
                                             <li>@include('item.worn_image', ['equippedItem' => $armorsListByEquipType->first(), 'qualityBackground' => false])</li>
@@ -66,12 +66,20 @@
                                     @if(!empty($itemStyle->material))
                                         <div class="col-md-12">
                                             <h4>Material</h4>
-                                            <img src="{{$itemStyle->image}}" title="{{$itemStyle->material}}" class="icon-size-40">
-                                            <p>{{$itemStyle->material}}</p>
+                                            @if(!is_null($itemStyle->material_id))
+                                                <a href="{{route('item.show', [$itemStyle->materialItem])}}">
+                                                    @include('item.image', ['item' => isset($userMaterial) ? $userMaterial : $itemStyle->materialItem])
+                                                </a>
+                                            @else
+                                                <img src="{{$itemStyle->image}}" title="{{$itemStyle->material}}" class="icon-size-40">
+                                                <p>{{$itemStyle->material}}</p>
+                                            @endif
                                         </div>
                                     @endif
                                 </div>
                             </div>
+
+
                         </div>
 
                         @foreach($images as $weight => $genders)
@@ -89,6 +97,46 @@
                                 @endforeach
                             </div>
                         @endforeach
+
+                        @if(isset($characters))
+                            <div class="row">
+                                <div class="col-md-12 m-t-3">
+                                    <div class="panel panel-default no-bg b-gray-dark">
+                                        <div class="panel-heading">
+                                           <h2 class="panel-title">Known by</h2>
+                                        </div>
+                                        <div>
+                                            <table class="table table-condensed table-bordered m-b-0">
+                                                <thead>
+                                                <tr>
+                                                    <th>Character</th>
+                                                    @foreach(\App\Enum\ItemStyleChapter::order() as $chapter)
+                                                        <th>{{trans('enums.styleItemChapter.'.$chapter.'.self')}}</th>
+                                                    @endforeach
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                @foreach($characters as $character)
+                                                    <tr>
+                                                        <td><a href="{{route('characters.show', [$character])}}">{{$character->name}}</a></td>
+                                                        @foreach(\App\Enum\ItemStyleChapter::order() as $chapter)
+                                                            @if($character->itemStyles->where('itemStyleChapterEnum', $chapter)->first())
+                                                                <td class="text-center text-white"><i class="fa fa-check"></i></td>
+                                                            @else
+                                                                <td></td>
+                                                            @endif
+                                                        @endforeach
+                                                    </tr>
+                                                @endforeach
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        @endif
+
+
                     </div>
                 </div>
             </div>

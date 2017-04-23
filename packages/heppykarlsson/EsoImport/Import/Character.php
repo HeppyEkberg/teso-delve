@@ -6,6 +6,12 @@ use App\Enum\CraftingType;
 class Character
 {
 
+    static public function check($line)
+    {
+        return strpos($line, 'CHARACTER:') !== false;
+    }
+
+
     public function process($line, $user) {
         $item_start = stripos($line, 'CHARACTER:');
         if($item_start === false) {
@@ -52,24 +58,29 @@ class Character
             $character->ridingUnlocked_at = $nextTraining;
         }
 
+        if(isset($properties[22])) {
+            $character->skillpoints = intval($properties[21]);
+            $character->skyshards = intval($properties[22]);
+        }
+
         $character->save();
 
         if(isset($properties[19])) {
             $ridingSkills = explode('-', $properties[19]);
             foreach($ridingSkills as $key => $ridingSkill) {
-                $character->setMeta('ridingskill-'. $key, intval($ridingSkill));
+                $character->setMeta('ridingskill-'. $key, $ridingSkill);
             }
         }
 
         if(isset($properties[16])) {
             $character->setMeta('bag_' . BagType::BACKPACK, intval($properties[16]));
-            $user->setMeta('bag_' . BagType::BANK, intval($properties[17]));
+            $user->setMeta('bag_' . BagType::BANK, $properties[17]);
         }
 
         if(isset($properties[20])) {
             $attributes = explode('-', $properties[20]);
             foreach($attributes as $key => $attribute) {
-                $character->setMeta('character-attribute-'.$key, intval($attribute));
+                $character->setMeta('character-attribute-'.$key, $attribute);
             }
         }
 

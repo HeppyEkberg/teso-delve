@@ -170,7 +170,9 @@ return [
         HeppyKarlsson\EsoImport\ServiceProvider::class,
         Cviebrock\EloquentSluggable\ServiceProvider::class,
         Rap2hpoutre\LaravelLogViewer\LaravelLogViewerServiceProvider::class,
-        //
+        Laratrust\LaratrustServiceProvider::class,
+        HeppyKarlsson\DBLogger\ServiceProvider::class,
+
 
         /*
          * Application Service Providers...
@@ -228,6 +230,8 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        'Laratrust' => Laratrust\LaratrustFacade::class,
+        'DBLogger' => \HeppyKarlsson\DBLogger\Facade\DBLogger::class,
 
     ],
 

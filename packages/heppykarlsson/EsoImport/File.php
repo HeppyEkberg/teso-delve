@@ -8,9 +8,11 @@ class File
 
         if($file_opened) {
             $line = null;
+            $i = 1;
             while (!feof($file_opened))
             {
-                call_user_func($function, fgets($file_opened));
+                call_user_func($function, fgets($file_opened), $i);
+                $i++;
             }
             fclose($file_opened);
         }

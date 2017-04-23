@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.admin')
 
 @section('stylesheet')
     <link href="/css/app.css" rel="stylesheet">
@@ -9,7 +9,7 @@
 @endsection
 
 @section('content')
-    <div class="container">
+    <div class="container-fluid">
         <div class="row-fluid">
 
             <div class="col-md-12">
@@ -57,14 +57,23 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="itemStyle[craftable]" class="control-label col-md-2">Material</label>
-                                    <div class="col-md-10">
+                                    <label for="itemStyle[material_id]" class="control-label col-md-2">Material</label>
+                                    <div class="col-md-3">
+                                        <select class="form-control" name="itemStyle[material_id]">
+                                            <option value="">Select material</option>
+                                            @foreach($materials as $material)
+                                                <option {{$itemStyle->material_id == $material->id ? 'selected="selected"' : ''}} value="{{$material->id}}">{{$material->name}}</option>
+                                            @endforeach
+                                        </select>
+                                    </div>
+                                    <div class="col-md-7">
                                         @if(!empty($itemStyle->material))
                                             <img src="{{$itemStyle->image}}" title="{{$itemStyle->material}}" class="icon-size-40">
                                             <br>
                                             <p>{{$itemStyle->material}}</p>
                                         @endif
                                     </div>
+
                                 </div>
 
                                 <hr>
@@ -91,7 +100,7 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <h3>Upload style images</h3>
-                                        <div url="{{route('admin.crafting.item-style.upload-images', [$itemStyle])}}" id="importDropzone"></div>
+                                        <div url="{{route('admin.crafting.item-style.upload-images', [$itemStyle])}}" id="importDropzone" class=" panel panel-default no-bg b-a-2 b-gray b-dashed m-b-0"></div>
                                     </div>
                                 </div>
 

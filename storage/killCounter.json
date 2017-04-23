@@ -1,0 +1,2014 @@
+{
+["Default"] =
+{
+["@Heppy"] =
+{
+["Zair Rylanor"] =
+{
+["settings"] =
+{
+["ChatCaptures"] = true,
+["ChatDeaths"] = true,
+["ChatKStreak"] = true,
+["ChatKills"] = true,
+["Sounds"] = true,
+["ChatCapStreak"] = true,
+["ChatSeiges"] = true,
+["ChatDStreak"] = true,
+["ignoreNPCDeath"] = false,
+},
+["totalKillingBlows"] = 0,
+["SC"] =
+{
+["resourcesCaptured"] = 0,
+["keepsCaptured"] = 0,
+["longestKeepStreak"] = 0,
+["longestResourceStreak"] = 0,
+},
+["offsetY"] = 0,
+["longestDeathStreak"] = 0,
+["totalKills"] = 0,
+["anchorPoint"] = 9,
+["version"] = 112,
+["offsetX"] = 0,
+["totalDeaths"] = 0,
+["killedBy"] =
+{
+},
+["rankPointsGained"] = 0,
+["longestStreak"] = 0,
+["kbSpells"] =
+{
+},
+["longestKBStreak"] = 0,
+["killed"] =
+{
+},
+},
+["Itzel Rylanor"] =
+{
+["settings"] =
+{
+["ChatCaptures"] = true,
+["ChatDeaths"] = true,
+["ChatKStreak"] = true,
+["ChatKills"] = true,
+["Sounds"] = true,
+["ChatCapStreak"] = true,
+["ChatSeiges"] = true,
+["ChatDStreak"] = true,
+["ignoreNPCDeath"] = false,
+},
+["totalKillingBlows"] = 0,
+["SC"] =
+{
+["resourcesCaptured"] = 1,
+["longestResourceStreak"] = 1,
+["keepStreak"] = 0,
+["keepsCaptured"] = 0,
+["longestKeepStreak"] = 0,
+["resourceStreak"] = 0,
+},
+["offsetY"] = 0,
+["longestDeathStreak"] = 4,
+["totalKills"] = 77,
+["anchorPoint"] = 9,
+["version"] = 112,
+["offsetX"] = 1,
+["totalDeaths"] = 40,
+["killedBy"] =
+{
+["Darh"] =
+{
+["KilledBy"] = 1,
+["Class"] = "Sorcerer",
+["vLevel"] = 16,
+["Alliance"] = 3,
+["Level"] = 50,
+["Name"] = "Darh",
+},
+["Nuxnix"] =
+{
+["KilledBy"] = 1,
+["Class"] = "Sorcerer",
+["vLevel"] = 16,
+["Alliance"] = 3,
+["Level"] = 50,
+["Name"] = "Nuxnix",
+},
+["Lord Vilkata"] =
+{
+["KilledBy"] = 1,
+["Class"] = "Templar",
+["vLevel"] = 16,
+["Alliance"] = 2,
+["Level"] = 50,
+["Name"] = "Lord Vilkata",
+},
+["Anchy"] =
+{
+["KilledBy"] = 1,
+["Class"] = "Templar",
+["vLevel"] = 16,
+["Alliance"] = 3,
+["Level"] = 50,
+["Name"] = "Anchy",
+},
+["Ziza"] =
+{
+["KilledBy"] = 1,
+["Class"] = "Sorcerer",
+["vLevel"] = 16,
+["Alliance"] = 3,
+["Level"] = 50,
+["Name"] = "Ziza",
+},
+["Wicha"] =
+{
+["KilledBy"] = 1,
+["Class"] = "Nightblade",
+["vLevel"] = 16,
+["Alliance"] = 3,
+["Level"] = 50,
+["Name"] = "Wicha",
+},
+["The Epic Ker"] =
+{
+["KilledBy"] = 2,
+["Class"] = "Nightblade",
+["vLevel"] = 16,
+["Alliance"] = 2,
+["Level"] = 50,
+["Name"] = "The Epic Ker",
+},
+["Stramina"] =
+{
+["KilledBy"] = 1,
+["Class"] = "",
+["vLevel"] = 16,
+["Alliance"] = 2,
+["Level"] = 50,
+["Name"] = "Stramina",
+},
+["Dahildar"] =
+{
+["KilledBy"] = 1,
+["Class"] = "Nightblade",
+["vLevel"] = 16,
+["Alliance"] = 2,
+["Level"] = 50,
+["Name"] = "Dahildar",
+},
+["Shamantafox"] =
+{
+["KilledBy"] = 1,
+["Class"] = "Sorcerer",
+["vLevel"] = 16,
+["Alliance"] = 3,
+["Level"] = 50,
+["Name"] = "Shamantafox",
+},
+["Adamfrai"] =
+{
+["KilledBy"] = 1,
+["Class"] = "",
+["vLevel"] = 16,
+["Alliance"] = 3,
+["Level"] = 50,
+["Name"] = "Adamfrai",
+},
+["-Ade"] =
+{
+["KilledBy"] = 1,
+["Class"] = "Nightblade",
+["vLevel"] = 16,
+["Alliance"] = 2,
+["Level"] = 50,
+["Name"] = "-Ade",
+},
+["Araviel"] =
+{
+["KilledBy"] = 1,
+["Class"] = "Sorcerer",
+["vLevel"] = 16,
+["Alliance"] = 3,
+["Level"] = 50,
+["Name"] = "Araviel",
+},
+["Das Tuch der Nacht"] =
+{
+["KilledBy"] = 1,
+["Class"] = "",
+["vLevel"] = 16,
+["Alliance"] = 2,
+["Level"] = 50,
+["Name"] = "Das Tuch der Nacht",
+},
+["Plonadriel Antàriel"] =
+{
+["KilledBy"] = 1,
+["Class"] = "Dragonknight",
+["vLevel"] = 16,
+["Alliance"] = 2,
+["Level"] = 50,
+["Name"] = "Plonadriel Antàriel",
+},
+["Hank Zappa"] =
+{
+["KilledBy"] = 1,
+["Class"] = "Nightblade",
+["vLevel"] = 16,
+["Alliance"] = 3,
+["Level"] = 50,
+["Name"] = "Hank Zappa",
+},
+["Ivanka M Trump"] =
+{
+["KilledBy"] = 1,
+["Class"] = "Dragonknight",
+["vLevel"] = 16,
+["Alliance"] = 3,
+["Level"] = 50,
+["Name"] = "Ivanka M Trump",
+},
+["Troxia"] =
+{
+["KilledBy"] = 1,
+["Class"] = "",
+["vLevel"] = 16,
+["Alliance"] = 3,
+["Level"] = 50,
+["Name"] = "Troxia",
+},
+["Hidden Hit"] =
+{
+["KilledBy"] = 1,
+["Class"] = "",
+["vLevel"] = 16,
+["Alliance"] = 3,
+["Level"] = 50,
+["Name"] = "Hidden Hit",
+},
+["Johui Joesthar"] =
+{
+["KilledBy"] = 1,
+["Class"] = "Nightblade",
+["vLevel"] = 16,
+["Alliance"] = 2,
+["Level"] = 50,
+["Name"] = "Johui Joesthar",
+},
+["Kewia"] =
+{
+["KilledBy"] = 1,
+["Class"] = "Templar",
+["vLevel"] = 16,
+["Alliance"] = 2,
+["Level"] = 50,
+["Name"] = "Kewia",
+},
+["Etirdard Larowing"] =
+{
+["KilledBy"] = 1,
+["Class"] = "",
+["vLevel"] = 16,
+["Alliance"] = 3,
+["Level"] = 50,
+["Name"] = "Etirdard Larowing",
+},
+["Felemeth Morales"] =
+{
+["KilledBy"] = 1,
+["Class"] = "Sorcerer",
+["vLevel"] = 16,
+["Alliance"] = 3,
+["Level"] = 50,
+["Name"] = "Felemeth Morales",
+},
+["Kampf Magier"] =
+{
+["KilledBy"] = 2,
+["Class"] = "Sorcerer",
+["vLevel"] = 16,
+["Alliance"] = 3,
+["Level"] = 50,
+["Name"] = "Kampf Magier",
+},
+["Vladimir Waitstraik"] =
+{
+["KilledBy"] = 1,
+["Class"] = "Dragonknight",
+["vLevel"] = 16,
+["Alliance"] = 2,
+["Level"] = 50,
+["Name"] = "Vladimir Waitstraik",
+},
+["Roytoy"] =
+{
+["KilledBy"] = 1,
+["Class"] = "Dragonknight",
+["vLevel"] = 16,
+["Alliance"] = 2,
+["Level"] = 50,
+["Name"] = "Roytoy",
+},
+["Ashamir"] =
+{
+["KilledBy"] = 1,
+["Class"] = "",
+["vLevel"] = 16,
+["Alliance"] = 2,
+["Level"] = 50,
+["Name"] = "Ashamir",
+},
+["Spudz"] =
+{
+["KilledBy"] = 1,
+["Class"] = "Nightblade",
+["vLevel"] = 16,
+["Alliance"] = 3,
+["Level"] = 50,
+["Name"] = "Spudz",
+},
+["Medician"] =
+{
+["KilledBy"] = 1,
+["Class"] = "Templar",
+["vLevel"] = 16,
+["Alliance"] = 2,
+["Level"] = 50,
+["Name"] = "Medician",
+},
+["Bright Gergi"] =
+{
+["KilledBy"] = 1,
+["Class"] = "Sorcerer",
+["vLevel"] = 16,
+["Alliance"] = 3,
+["Level"] = 50,
+["Name"] = "Bright Gergi",
+},
+["Shallow"] =
+{
+["KilledBy"] = 1,
+["Class"] = "Templar",
+["vLevel"] = 16,
+["Alliance"] = 3,
+["Level"] = 50,
+["Name"] = "Shallow",
+},
+},
+["rankPointsGained"] = 148269,
+["longestStreak"] = 11,
+["kbSpells"] =
+{
+["Purifying Light"] = 3,
+},
+["longestKBStreak"] = 1,
+["killed"] =
+{
+["Aiala"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 2,
+["Class"] = "Templar",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Aiala",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Arbrey"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 2,
+["Class"] = "Dragonknight",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Arbrey",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Dayneriis"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 3,
+["Class"] = "Sorcerer",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Dayneriis",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Dan Gro-Gorgon"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 3,
+["Class"] = "Nightblade",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Dan Gro-Gorgon",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["d'Andrew"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 2,
+["Class"] = "Nightblade",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "d'Andrew",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["fbaseven"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 0,
+["Class"] = "",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "fbaseven",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Nafets Troma"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 3,
+["Class"] = "Sorcerer",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Nafets Troma",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Uffsedruff"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 3,
+["Class"] = "Templar",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Uffsedruff",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Sarmant"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 3,
+["Class"] = "Dragonknight",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Sarmant",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Peticoeur"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 3,
+["Class"] = "Dragonknight",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Peticoeur",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["dabee"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 0,
+["Class"] = "",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "dabee",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Fire In Your Pants"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 3,
+["Class"] = "Dragonknight",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Fire In Your Pants",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Sabexia Shockswift"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 3,
+["Class"] = "Sorcerer",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Sabexia Shockswift",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["therat"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 2,
+["Class"] = "Nightblade",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "therat",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["ink-mm"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 0,
+["Class"] = "",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "ink-mm",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["bezduchý"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 2,
+["Class"] = "Nightblade",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "bezduchý",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Ileosa Arabasti"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 0,
+["Class"] = "",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Ileosa Arabasti",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Darh"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 3,
+["Class"] = "Sorcerer",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Darh",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["al-rakar"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 1,
+["Revent_Kills"] = 0,
+["Alliance"] = 3,
+["Class"] = "Dragonknight",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "al-rakar",
+["Level"] = 0,
+["Kills"] = 2,
+},
+["Knoridrim"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 3,
+["Class"] = "Templar",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Knoridrim",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Ufocaptain"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 3,
+["Class"] = "Dragonknight",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Ufocaptain",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Marccuss"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 2,
+["Class"] = "Nightblade",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Marccuss",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["El u n e m"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 2,
+["Class"] = "Dragonknight",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "El u n e m",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Wrapped In Cellophane"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 1,
+["Revent_Kills"] = 0,
+["Alliance"] = 3,
+["Class"] = "Sorcerer",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Wrapped In Cellophane",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Cokeen"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 3,
+["Class"] = "Nightblade",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Cokeen",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Malijanne"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 0,
+["Class"] = "",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Malijanne",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["The Armenian"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 3,
+["Class"] = "Nightblade",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "The Armenian",
+["Level"] = 0,
+["Kills"] = 2,
+},
+["Elektric"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 3,
+["Class"] = "Nightblade",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Elektric",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Syphirioth"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 2,
+["Class"] = "Dragonknight",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Syphirioth",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Udaios"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 0,
+["Class"] = "",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Udaios",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Astral Vortex"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 3,
+["Class"] = "Templar",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Astral Vortex",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Lord Vilkata"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 2,
+["Class"] = "Templar",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Lord Vilkata",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["tortoko"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 3,
+["Class"] = "Dragonknight",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "tortoko",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Tenel"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 2,
+["Class"] = "Sorcerer",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Tenel",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Bellatrix Souleater"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 2,
+["Class"] = "Nightblade",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Bellatrix Souleater",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Tata darlesse"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 3,
+["Class"] = "Nightblade",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Tata darlesse",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Imhigh"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 0,
+["Class"] = "",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Imhigh",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Sarutyras"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 3,
+["Class"] = "Sorcerer",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Sarutyras",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Legendary Lily Potter"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 3,
+["Class"] = "Sorcerer",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Legendary Lily Potter",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Varduum"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 0,
+["Class"] = "",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Varduum",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Liz Claymore"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 3,
+["Class"] = "Templar",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Liz Claymore",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Nengoflow"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 1,
+["Revent_Kills"] = 0,
+["Alliance"] = 3,
+["Class"] = "Sorcerer",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Nengoflow",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Lenchen Nachtklinge"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 0,
+["Class"] = "",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Lenchen Nachtklinge",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Lord Robskij"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 3,
+["Class"] = "Dragonknight",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Lord Robskij",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Mortan Guerriero"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 3,
+["Class"] = "Dragonknight",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Mortan Guerriero",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Samwell Bogtrotter"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 3,
+["Class"] = "Dragonknight",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Samwell Bogtrotter",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Voraddor"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 0,
+["Class"] = "",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Voraddor",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["War Chief Rondar"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 2,
+["Class"] = "Dragonknight",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "War Chief Rondar",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["bal porche"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 3,
+["Class"] = "Sorcerer",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "bal porche",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Wyvern Nite"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 2,
+["Class"] = "Dragonknight",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Wyvern Nite",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["skular souleter"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 3,
+["Class"] = "Nightblade",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "skular souleter",
+["Level"] = 0,
+["Kills"] = 3,
+},
+["Lord Rezo"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 0,
+["Class"] = "",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Lord Rezo",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Vinna Orcidees"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 3,
+["Class"] = "Dragonknight",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Vinna Orcidees",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Agger"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 3,
+["Class"] = "Dragonknight",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Agger",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Kampf Magier"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 3,
+["Class"] = "Sorcerer",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Kampf Magier",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Niradzin"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 3,
+["Class"] = "Nightblade",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Niradzin",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Just Fifty"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 0,
+["Class"] = "",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Just Fifty",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Sidewaysdm"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 2,
+["Class"] = "Nightblade",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Sidewaysdm",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Mira Akatosh"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 2,
+["Class"] = "Nightblade",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Mira Akatosh",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Rewws"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 2,
+["Class"] = "Sorcerer",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Rewws",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Anub'arakh"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 2,
+["Class"] = "Nightblade",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Anub'arakh",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Eye-Killz-You"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 0,
+["Class"] = "",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Eye-Killz-You",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Amiryk"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 2,
+["Class"] = "Dragonknight",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Amiryk",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Kriš"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 0,
+["Class"] = "",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Kriš",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Elastria"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 0,
+["Class"] = "",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Elastria",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Borg-Nexus"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 2,
+["Class"] = "Templar",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Borg-Nexus",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Aidee"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 3,
+["Class"] = "Sorcerer",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Aidee",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Filarion Schattenhand"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 2,
+["Class"] = "Nightblade",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Filarion Schattenhand",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Cyblimal"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 2,
+["Class"] = "Dragonknight",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Cyblimal",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["'Cosmofied"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 2,
+["Class"] = "Dragonknight",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "'Cosmofied",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Saltiana"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 2,
+["Class"] = "Templar",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Saltiana",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Nenime of the Morning Sun"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 3,
+["Class"] = "Templar",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Nenime of the Morning Sun",
+["Level"] = 0,
+["Kills"] = 1,
+},
+["Laydi Devin"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 0,
+["Revent_Kills"] = 0,
+["Alliance"] = 3,
+["Class"] = "Templar",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Laydi Devin",
+["Level"] = 0,
+["Kills"] = 1,
+},
+},
+},
+["Kristof Rylanor"] =
+{
+["settings"] =
+{
+["ChatCaptures"] = true,
+["ChatDeaths"] = true,
+["ChatKStreak"] = true,
+["ChatKills"] = true,
+["Sounds"] = true,
+["ChatCapStreak"] = true,
+["ChatSeiges"] = true,
+["ChatDStreak"] = true,
+["ignoreNPCDeath"] = false,
+},
+["totalKillingBlows"] = 0,
+["SC"] =
+{
+["resourcesCaptured"] = 0,
+["keepsCaptured"] = 0,
+["longestKeepStreak"] = 0,
+["longestResourceStreak"] = 0,
+},
+["offsetY"] = 0,
+["longestDeathStreak"] = 0,
+["totalKills"] = 0,
+["anchorPoint"] = 9,
+["version"] = 112,
+["offsetX"] = 0,
+["totalDeaths"] = 0,
+["killedBy"] =
+{
+},
+["rankPointsGained"] = 0,
+["longestStreak"] = 0,
+["kbSpells"] =
+{
+},
+["longestKBStreak"] = 0,
+["killed"] =
+{
+},
+},
+["Ji'lezzian"] =
+{
+["settings"] =
+{
+["ChatCaptures"] = true,
+["ChatDeaths"] = true,
+["ChatKStreak"] = true,
+["ChatKills"] = true,
+["Sounds"] = true,
+["ChatCapStreak"] = true,
+["ChatSeiges"] = true,
+["ChatDStreak"] = true,
+["ignoreNPCDeath"] = false,
+},
+["totalKillingBlows"] = 0,
+["SC"] =
+{
+["resourcesCaptured"] = 0,
+["keepsCaptured"] = 0,
+["longestKeepStreak"] = 0,
+["longestResourceStreak"] = 0,
+},
+["offsetY"] = 0,
+["longestDeathStreak"] = 0,
+["totalKills"] = 2,
+["anchorPoint"] = 9,
+["version"] = 112,
+["offsetX"] = 0,
+["totalDeaths"] = 0,
+["killedBy"] =
+{
+},
+["rankPointsGained"] = 0,
+["longestStreak"] = 2,
+["kbSpells"] =
+{
+["Rapid Strikes"] = 2,
+},
+["longestKBStreak"] = 2,
+["killed"] =
+{
+["Thull Zun"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 2,
+["Revent_Kills"] = 0,
+["Alliance"] = 0,
+["Class"] = "",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Thull Zun",
+["Level"] = 0,
+["Kills"] = 2,
+},
+},
+},
+["Helbjaern Stormcrow"] =
+{
+["settings"] =
+{
+["ChatCaptures"] = true,
+["ChatDeaths"] = true,
+["ChatKStreak"] = true,
+["ChatKills"] = true,
+["Sounds"] = true,
+["ChatCapStreak"] = true,
+["ChatSeiges"] = true,
+["ChatDStreak"] = true,
+["ignoreNPCDeath"] = false,
+},
+["totalKillingBlows"] = 0,
+["SC"] =
+{
+["resourcesCaptured"] = 0,
+["keepsCaptured"] = 0,
+["longestKeepStreak"] = 0,
+["longestResourceStreak"] = 0,
+},
+["offsetY"] = 0,
+["longestDeathStreak"] = 0,
+["totalKills"] = 0,
+["anchorPoint"] = 9,
+["version"] = 112,
+["offsetX"] = 0,
+["totalDeaths"] = 0,
+["killedBy"] =
+{
+},
+["rankPointsGained"] = 0,
+["longestStreak"] = 0,
+["kbSpells"] =
+{
+},
+["longestKBStreak"] = 0,
+["killed"] =
+{
+},
+},
+["Lestatbanks"] =
+{
+["settings"] =
+{
+["ChatCaptures"] = true,
+["ChatDeaths"] = true,
+["ChatKStreak"] = true,
+["ChatKills"] = true,
+["Sounds"] = true,
+["ChatCapStreak"] = true,
+["ChatSeiges"] = true,
+["ChatDStreak"] = true,
+["ignoreNPCDeath"] = false,
+},
+["totalKillingBlows"] = 0,
+["SC"] =
+{
+["resourcesCaptured"] = 0,
+["keepsCaptured"] = 0,
+["longestKeepStreak"] = 0,
+["longestResourceStreak"] = 0,
+},
+["offsetY"] = 0,
+["longestDeathStreak"] = 0,
+["totalKills"] = 0,
+["anchorPoint"] = 9,
+["version"] = 112,
+["offsetX"] = 0,
+["totalDeaths"] = 0,
+["killedBy"] =
+{
+},
+["rankPointsGained"] = 0,
+["longestStreak"] = 0,
+["kbSpells"] =
+{
+},
+["longestKBStreak"] = 0,
+["killed"] =
+{
+},
+},
+["Adavos Rylanor"] =
+{
+["settings"] =
+{
+["ChatCaptures"] = true,
+["ChatDeaths"] = true,
+["ChatKStreak"] = true,
+["ChatKills"] = true,
+["Sounds"] = true,
+["ChatCapStreak"] = true,
+["ChatSeiges"] = true,
+["ChatDStreak"] = true,
+["ignoreNPCDeath"] = false,
+},
+["totalKillingBlows"] = 0,
+["SC"] =
+{
+["resourcesCaptured"] = 0,
+["keepsCaptured"] = 0,
+["longestKeepStreak"] = 0,
+["longestResourceStreak"] = 0,
+},
+["offsetY"] = 0,
+["longestDeathStreak"] = 0,
+["totalKills"] = 0,
+["anchorPoint"] = 9,
+["version"] = 112,
+["offsetX"] = 0,
+["totalDeaths"] = 0,
+["killedBy"] =
+{
+},
+["rankPointsGained"] = 0,
+["longestStreak"] = 0,
+["kbSpells"] =
+{
+},
+["longestKBStreak"] = 0,
+["killed"] =
+{
+},
+},
+["Davenas Rylanor"] =
+{
+["settings"] =
+{
+["ChatCaptures"] = true,
+["ChatDeaths"] = true,
+["ChatKStreak"] = true,
+["ChatKills"] = true,
+["Sounds"] = true,
+["ChatCapStreak"] = true,
+["ChatSeiges"] = true,
+["ChatDStreak"] = true,
+["ignoreNPCDeath"] = false,
+},
+["totalKillingBlows"] = 0,
+["SC"] =
+{
+["resourcesCaptured"] = 0,
+["keepsCaptured"] = 0,
+["longestKeepStreak"] = 0,
+["longestResourceStreak"] = 0,
+},
+["offsetY"] = 0,
+["longestDeathStreak"] = 0,
+["totalKills"] = 0,
+["anchorPoint"] = 9,
+["version"] = 112,
+["offsetX"] = 0,
+["totalDeaths"] = 0,
+["killedBy"] =
+{
+},
+["rankPointsGained"] = 0,
+["longestStreak"] = 0,
+["kbSpells"] =
+{
+},
+["longestKBStreak"] = 0,
+["killed"] =
+{
+},
+},
+["Lestatbank"] =
+{
+["settings"] =
+{
+["ChatCaptures"] = true,
+["ChatDeaths"] = true,
+["ChatKStreak"] = true,
+["ChatKills"] = true,
+["Sounds"] = true,
+["ChatCapStreak"] = true,
+["ChatSeiges"] = true,
+["ChatDStreak"] = true,
+["ignoreNPCDeath"] = false,
+},
+["totalKillingBlows"] = 0,
+["SC"] =
+{
+["resourcesCaptured"] = 0,
+["keepsCaptured"] = 0,
+["longestKeepStreak"] = 0,
+["longestResourceStreak"] = 0,
+},
+["offsetY"] = 0,
+["longestDeathStreak"] = 0,
+["totalKills"] = 0,
+["anchorPoint"] = 9,
+["version"] = 112,
+["offsetX"] = 0,
+["totalDeaths"] = 0,
+["killedBy"] =
+{
+},
+["rankPointsGained"] = 0,
+["longestStreak"] = 0,
+["kbSpells"] =
+{
+},
+["longestKBStreak"] = 0,
+["killed"] =
+{
+},
+},
+["Kharnac Bloodmane"] =
+{
+["settings"] =
+{
+["ChatCaptures"] = true,
+["ChatDeaths"] = true,
+["ChatKStreak"] = true,
+["ChatKills"] = true,
+["Sounds"] = true,
+["ChatCapStreak"] = true,
+["ChatSeiges"] = true,
+["ChatDStreak"] = true,
+["ignoreNPCDeath"] = false,
+},
+["totalKillingBlows"] = 0,
+["SC"] =
+{
+["resourcesCaptured"] = 0,
+["keepsCaptured"] = 0,
+["longestKeepStreak"] = 0,
+["longestResourceStreak"] = 0,
+},
+["offsetY"] = 0,
+["longestDeathStreak"] = 0,
+["totalKills"] = 0,
+["anchorPoint"] = 9,
+["version"] = 112,
+["offsetX"] = 0,
+["totalDeaths"] = 0,
+["killedBy"] =
+{
+},
+["rankPointsGained"] = 0,
+["longestStreak"] = 0,
+["kbSpells"] =
+{
+},
+["longestKBStreak"] = 0,
+["killed"] =
+{
+},
+},
+["Lestat Rylanor"] =
+{
+["settings"] =
+{
+["ChatCaptures"] = true,
+["ChatDeaths"] = true,
+["ChatKStreak"] = true,
+["ChatKills"] = true,
+["Sounds"] = true,
+["ChatCapStreak"] = true,
+["ChatSeiges"] = true,
+["ChatDStreak"] = true,
+["ignoreNPCDeath"] = false,
+},
+["totalKillingBlows"] = 0,
+["SC"] =
+{
+["resourcesCaptured"] = 0,
+["keepsCaptured"] = 0,
+["longestKeepStreak"] = 0,
+["longestResourceStreak"] = 0,
+},
+["offsetY"] = 0,
+["longestDeathStreak"] = 0,
+["totalKills"] = 2,
+["anchorPoint"] = 9,
+["version"] = 112,
+["offsetX"] = 0,
+["totalDeaths"] = 0,
+["killedBy"] =
+{
+},
+["rankPointsGained"] = 0,
+["longestStreak"] = 2,
+["kbSpells"] =
+{
+["Executioner"] = 2,
+},
+["longestKBStreak"] = 2,
+["killed"] =
+{
+["Zveroboy Vasilich"] =
+{
+["Avenge_Kills"] = 0,
+["isVampire"] = false,
+["KillingBlows"] = 2,
+["Revent_Kills"] = 0,
+["Alliance"] = 0,
+["Class"] = "",
+["Damage_Done"] = 0,
+["Healing_Kills"] = 0,
+["Name"] = "Zveroboy Vasilich",
+["Level"] = 0,
+["Kills"] = 2,
+},
+},
+},
+["Ji'lezar"] =
+{
+["settings"] =
+{
+["ChatCaptures"] = true,
+["ChatDeaths"] = true,
+["ChatKStreak"] = true,
+["ChatKills"] = true,
+["Sounds"] = true,
+["ChatCapStreak"] = true,
+["ChatSeiges"] = true,
+["ChatDStreak"] = true,
+["ignoreNPCDeath"] = false,
+},
+["totalKillingBlows"] = 0,
+["SC"] =
+{
+["resourcesCaptured"] = 0,
+["keepsCaptured"] = 0,
+["longestKeepStreak"] = 0,
+["longestResourceStreak"] = 0,
+},
+["offsetY"] = 0,
+["longestDeathStreak"] = 0,
+["totalKills"] = 0,
+["anchorPoint"] = 9,
+["version"] = 112,
+["offsetX"] = 0,
+["totalDeaths"] = 0,
+["killedBy"] =
+{
+},
+["rankPointsGained"] = 0,
+["longestStreak"] = 0,
+["kbSpells"] =
+{
+},
+["longestKBStreak"] = 0,
+["killed"] =
+{
+},
+},
+["Eamon Rylanor"] =
+{
+["settings"] =
+{
+["ChatCaptures"] = true,
+["ChatDeaths"] = true,
+["ChatKStreak"] = true,
+["ChatKills"] = true,
+["Sounds"] = true,
+["ChatCapStreak"] = true,
+["ChatSeiges"] = true,
+["ChatDStreak"] = true,
+["ignoreNPCDeath"] = false,
+},
+["totalKillingBlows"] = 0,
+["SC"] =
+{
+["resourcesCaptured"] = 0,
+["keepsCaptured"] = 0,
+["longestKeepStreak"] = 0,
+["longestResourceStreak"] = 0,
+},
+["offsetY"] = 0,
+["longestDeathStreak"] = 0,
+["totalKills"] = 0,
+["anchorPoint"] = 9,
+["version"] = 112,
+["offsetX"] = 0,
+["totalDeaths"] = 0,
+["killedBy"] =
+{
+},
+["rankPointsGained"] = 0,
+["longestStreak"] = 0,
+["kbSpells"] =
+{
+},
+["longestKBStreak"] = 0,
+["killed"] =
+{
+},
+},
+["Lestatbankse"] =
+{
+["settings"] =
+{
+["ChatCaptures"] = true,
+["ChatDeaths"] = true,
+["ChatKStreak"] = true,
+["ChatKills"] = true,
+["Sounds"] = true,
+["ChatCapStreak"] = true,
+["ChatSeiges"] = true,
+["ChatDStreak"] = true,
+["ignoreNPCDeath"] = false,
+},
+["totalKillingBlows"] = 0,
+["SC"] =
+{
+["resourcesCaptured"] = 0,
+["keepsCaptured"] = 0,
+["longestKeepStreak"] = 0,
+["longestResourceStreak"] = 0,
+},
+["offsetY"] = 0,
+["longestDeathStreak"] = 0,
+["totalKills"] = 0,
+["anchorPoint"] = 9,
+["version"] = 112,
+["offsetX"] = 0,
+["totalDeaths"] = 0,
+["killedBy"] =
+{
+},
+["rankPointsGained"] = 0,
+["longestStreak"] = 0,
+["kbSpells"] =
+{
+},
+["longestKBStreak"] = 0,
+["killed"] =
+{
+},
+},
+["Agrane Rylanor"] =
+{
+["settings"] =
+{
+["ChatCaptures"] = true,
+["ChatDeaths"] = true,
+["ChatKStreak"] = true,
+["ChatKills"] = true,
+["Sounds"] = true,
+["ChatCapStreak"] = true,
+["ChatSeiges"] = true,
+["ChatDStreak"] = true,
+["ignoreNPCDeath"] = false,
+},
+["totalKillingBlows"] = 0,
+["SC"] =
+{
+["resourcesCaptured"] = 0,
+["keepsCaptured"] = 0,
+["longestKeepStreak"] = 0,
+["longestResourceStreak"] = 0,
+},
+["offsetY"] = 0,
+["longestDeathStreak"] = 0,
+["totalKills"] = 0,
+["anchorPoint"] = 9,
+["version"] = 112,
+["offsetX"] = 0,
+["totalDeaths"] = 0,
+["killedBy"] =
+{
+},
+["rankPointsGained"] = 0,
+["longestStreak"] = 0,
+["kbSpells"] =
+{
+},
+["longestKBStreak"] = 0,
+["killed"] =
+{
+},
+},
+["Al-jawn Rylanor"] =
+{
+["settings"] =
+{
+["ChatCaptures"] = true,
+["ChatDeaths"] = true,
+["ChatKStreak"] = true,
+["ChatKills"] = true,
+["Sounds"] = true,
+["ChatCapStreak"] = true,
+["ChatSeiges"] = true,
+["ChatDStreak"] = true,
+["ignoreNPCDeath"] = false,
+},
+["totalKillingBlows"] = 0,
+["SC"] =
+{
+["resourcesCaptured"] = 0,
+["keepsCaptured"] = 0,
+["longestKeepStreak"] = 0,
+["longestResourceStreak"] = 0,
+},
+["offsetY"] = 0,
+["longestDeathStreak"] = 0,
+["totalKills"] = 0,
+["anchorPoint"] = 9,
+["version"] = 112,
+["offsetX"] = 0,
+["totalDeaths"] = 0,
+["killedBy"] =
+{
+},
+["rankPointsGained"] = 0,
+["longestStreak"] = 0,
+["kbSpells"] =
+{
+},
+["longestKBStreak"] = 0,
+["killed"] =
+{
+},
+},
+},
+},
+}

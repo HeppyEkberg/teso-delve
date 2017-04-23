@@ -113,11 +113,27 @@
   margin-left: 0px;
 }
 
+.ability-icon.ability-locked img {
+  opacity: 0.2;
+}
+
+.ability-icon.ability-locked .fa {
+  display: inline-block;
+  position: absolute;
+  top: 11px;
+  left: 27px;
+  color: white;
+}
+
+.ability-icon .fa {
+  display: none;
+}
+
 .item-icon.size-40 {
   max-width: 40px;
 }
 
-.item_image .fa {
+.item_image > .item-hover > .fa {
   position: absolute;
   margin-left: -5px;
   margin-top: -5px;
@@ -133,20 +149,20 @@
   margin-bottom: 5px;
 }
 
-.inventory .slot-count {
-  position: absolute;
-  color: white;
-  margin-top: -17px;
-  width: 40px;
-  text-align: right;
-}
-
 .filter-icons img {
   max-width: 34px;
 }
 
 .filter-icons .btn {
   padding: 0px;
+}
+
+.slot-count {
+  position: absolute;
+  margin-top: 23px;
+  width: 38px;
+  text-align: right;
+  font-weight: bold;
 }
 
 .table-grid tbody tr td {
@@ -225,8 +241,7 @@
 }
 
 .no-margin {
-  margin-top: 0px !important;
-  margin-bottom: 0px !important;
+  margin: 0px !important;
 }
 
 .margin-top-19 {
@@ -247,6 +262,11 @@
 
 .width-120 {
   max-width: 120px;
+}
+
+.row-no-padding > [class*="col-"] {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 .addon-version {
@@ -270,12 +290,11 @@
   color: white;
   min-height: 125px;
   border: #767676;
-  background: #272727;
   padding: 40px;
   vertical-align: middle;
 }
 
-.fa {
+#importDropzone .fa {
   font-size: 14px;
   color: white;
 }
@@ -299,6 +318,14 @@
 .dropzone-message.message-uploading {
   margin-top: 7px;
   display: none;
+}
+
+.admin-wrap {
+  margin-top: 40px;
+}
+
+.admin-wrap > .content {
+  padding-top: 25px;
 }
 
 body {

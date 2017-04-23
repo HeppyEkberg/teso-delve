@@ -23,7 +23,7 @@ if($user) {
         <span class="set-hover" setId="{{$set->id}}">
             <a href="{{route('set.show', [$set])}}"><strong>{{$set->name}}</strong></a>
             @if($user and $setCount > 0)
-                <span class="badge">{{$setCount}}</span>
+                <span class="badge badge-primary">{{$setCount}}</span>
             @endif
         </span>
     </td>

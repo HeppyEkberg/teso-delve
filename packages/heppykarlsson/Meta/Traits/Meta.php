@@ -22,7 +22,7 @@ trait Meta
             $meta = new MetaModel();
         }
 
-        if($meta->value == $value) {
+        if($meta->value === $value) {
             return true;
         }
 

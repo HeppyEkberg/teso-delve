@@ -5,6 +5,7 @@ return [
         6 => ['name' => 'Templar'],
         2 => ['name' => 'Sorcerer'],
         3 => ['name' => 'Nightblade'],
+        4 => ['name' => 'Warden'],
         1 => ['name' => 'Dragonknight'],
     ],
     'races' => [

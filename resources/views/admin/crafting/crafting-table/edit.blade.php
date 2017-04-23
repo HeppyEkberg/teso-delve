@@ -1,6 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
+    <div class="row-fluid text-right">
+        <br>
+        <a class="btn btn-primary" href="{{route('admin.crafting-table.update', [$craftingTypeEnum])}}">Populate crafting table</a>
+    </div>
     <div class="row-fluid">
         <div class="col-md-12 m-t-3">
             <ul class="nav nav-tabs">

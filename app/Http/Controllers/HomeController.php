@@ -9,6 +9,7 @@ use App\Model\Item;
 use App\Model\ItemStyleChapter;
 use App\Model\Set;
 use Carbon\Carbon;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Cache;
 
 class HomeController extends Controller
@@ -27,22 +28,17 @@ class HomeController extends Controller
             ->orderBy('date')
             ->get();
 
-        $itemCount = Cache::remember('total-item-count', 60*2, function() {
-            return Item::count();
+        $lang = App::getLocale();
+
+        $information = Cache::remember('startpage-info-'.$lang, 60*2, function() use ($lang) {
+            return [
+                'items' => Item::where('lang', App::getLocale())->count(),
+                'characters' => Character::count(),
+                'sets' => Set::where('lang', $lang)->count(),
+                'motifs' => CharacterItemStyle::where('isKnown', 1)->count(),
+            ];
         });
 
-        $characterCount = Cache::remember('total-character-count', 60*2, function() {
-            return Character::count();
-        });
-
-        $motifCount = Cache::remember('total-motif-count', 60*2, function() {
-            return CharacterItemStyle::count();
-        });
-
-        $setsCount = Cache::remember('total-sets-count', 60*2, function() {
-            return Set::count();
-        });
-
-        return view('home.index', compact('dailyPledges', 'itemCount', 'characterCount', 'motifCount', 'setsCount'));
+        return view('home.index', compact('dailyPledges', 'information'));
     }
 }

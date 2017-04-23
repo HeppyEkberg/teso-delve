@@ -2,13 +2,18 @@
 
 use App\Model\Dungeon;
 use App\Model\DungeonSet;
+use App\Model\ImportGroup;
+use App\Model\Role\Permission;
+use App\Model\Role\PermissionRole;
+use App\Model\Role\Role;
 use App\Model\Set;
 use App\Model\SetBonus;
 use App\Model\UserSetFavourite;
+use App\Repository\GithubRepository;
 use HeppyKarlsson\EsoImport\EsoImport;
+use HeppyKarlsson\MMImport\ImportService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\File;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 
@@ -16,9 +21,26 @@ class ImportController
 {
 
     public function import(EsoImport $esoImport) {
-        $return = $esoImport->import(storage_path('TesoDelve.lua'));
-        dump($return);
+
+        $path = storage_path('TesoDelve.lua');
+        $return = $esoImport->import($path);
+//        $return = $esoImport->jobImport($path);
         return 'works';
+    }
+
+    public function mastermerchant() {
+
+        $files = scandir(storage_path('app/mm-data'));
+
+        $mmService = new ImportService();
+        foreach($files as $file) {
+            if(stripos($file, '.lua') === false) {
+                continue;
+            }
+
+            $mmService->import(storage_path('app/mm-data/'.$file));
+        }
+
     }
 
     public function export() {
@@ -27,45 +49,58 @@ class ImportController
         $userFavourites = UserSetFavourite::all();
         $dungeons = Dungeon::all();
         $dungeonSets = DungeonSet::all();
+        $roles = Role::all();
+        $permissions = Permission::all();
+        $permissionRole = PermissionRole::all();
 
         file_put_contents(storage_path('dump/sets.json'), $sets->toJson());
         file_put_contents(storage_path('dump/setBonuses.json'), $setBonuses->toJson());
         file_put_contents(storage_path('dump/userFavourites.json'), $userFavourites->toJson());
         file_put_contents(storage_path('dump/dungeons.json'), $dungeons->toJson());
         file_put_contents(storage_path('dump/dungeonSets.json'), $dungeonSets->toJson());
+        file_put_contents(storage_path('dump/roles.json'), $roles->toJson());
+        file_put_contents(storage_path('dump/permissions.json'), $permissions->toJson());
+        file_put_contents(storage_path('dump/permissionRole.json'), $permissionRole->toJson());
 
         return 'success';
     }
 
     public function upload(Request $request, EsoImport $esoImport) {
         $files = $request->files->all();
+        $user = Auth::user();
 
         foreach($files as $file) {
             /** @var $file UploadedFile */
-            if($file->getClientOriginalName() == 'TesoDelve.lua') {
+            $fileName = $file->getClientOriginalName();
+
+            if($fileName == 'TesoDelve.lua') {
                 File::copy($file->getRealPath(), storage_path('dumps/dump_' . Auth::id() . ".lua"));
                 return $esoImport->import($file->getRealPath());
             }
 
-            abort(404);
+            if(substr($fileName, 0, 2) == "MM" and stripos($fileName, 'Data.lua') !== false and $user->hasPermission('upload-mm')) {
+                $newFile = storage_path('app/mm-data/' . Auth::id() . "-" . $fileName);
+                File::copy($file->getRealPath(), $newFile);
+
+                $mmService = new ImportService();
+                $mmService->import($newFile);
+                return 'MM uploaded';
+            }
         }
+
+        abort(404);
     }
 
     public function index() {
-        $addonInfo = Cache::remember('github_addon_version', config('addon.github.cache-time'), function() {
-            $opts = config('addon.github.opts');
-            $context = stream_context_create($opts);
 
-            $result = file_get_contents(config('addon.github.repo-url'), null, $context);
-            $result = json_decode($result);
+        $githubRepository = new GithubRepository();
+        $addonInfo = $githubRepository->info();
 
-            return [
-                'version' => $result->tag_name,
-                'zipball' => $result->zipball_url,
-            ];
-        });
+        $importGroup = ImportGroup::where('user_id', Auth::id())
+            ->orderBy('created_at', 'desc')
+            ->first();
 
-        return view('import.index', compact('addonInfo'));
+        return view('import.index', compact('addonInfo', 'importGroup'));
     }
 
 }

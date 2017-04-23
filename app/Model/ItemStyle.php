@@ -30,4 +30,8 @@ class ItemStyle extends Model
         return $this->hasMany(ItemStyleChapter::class, 'itemStyleId');
     }
 
+    public function materialItem() {
+        return $this->hasOne(Item::class, 'id', 'material_id');
+    }
+
 }

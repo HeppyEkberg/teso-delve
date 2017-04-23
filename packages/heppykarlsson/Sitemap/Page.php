@@ -4,6 +4,7 @@
 class Page
 {
     protected $url;
+    protected $changeFrequency = 'weekly';
 
     public function __construct($url)
     {
@@ -18,9 +19,20 @@ class Page
         return $this->url;
     }
 
+    public function changeFrequency($changeFrequency = null) {
+        if(!is_null($changeFrequency)) {
+            $this->changeFrequency = $changeFrequency;
+            return $this;
+        }
+
+        return $this->changeFrequency;
+    }
+
     public function __toString()
     {
         return $this->url;
     }
+
+
 
 }

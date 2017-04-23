@@ -8,6 +8,11 @@ use Illuminate\Support\Facades\Auth;
 class Item
 {
 
+    static public function check($line)
+    {
+        return strpos($line, 'ITEM:') !== false;
+    }
+
     public function process($line, $user, $itemStyles) {
         $item_start = strpos($line, 'ITEM:');
         if($item_start === false) {

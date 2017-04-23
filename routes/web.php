@@ -23,7 +23,9 @@ Route::get('/dungeon/trials', 'DungeonController@index')->name('dungeons.trials.
 Route::get('/dungeon/delves', 'DungeonController@index')->name('dungeons.delves.index');
 Route::get('/dungeon/arenas', 'DungeonController@index')->name('dungeons.arenas.index');
 
+include('web/items.php');
 include('web/sets.php');
+include('web/character.php');
 
 Route::group(['middleware' => 'auth'], function () {
     include('web/inventory.php');
@@ -32,19 +34,10 @@ Route::group(['middleware' => 'auth'], function () {
 });
 
 Route::get('/import-data', 'ImportController@import');
+Route::get('/import-mm', 'ImportController@mastermerchant');
 Route::get('/export', 'ImportController@export');
 
 Route::get('/esoui/art/icons/{image}', 'EsouiController@image');
-
-Route::get('/character/{character}/delete', 'CharacterController@delete')->name('characters.delete');
-Route::get('/character/{character}/restore', 'CharacterController@restore')->name('characters.restore');
-Route::get('/character/{character}', 'CharacterController@show')->name('characters.show');
-Route::get('/character/{character}/crafting/{craftingTypeEnum}', 'CharacterController@craftingResearch')->name('character.crafting');
-Route::get('/character/{character}/motifs', 'CharacterController@itemStyles')->name('character.itemstyles');
-Route::get('/characters/deleted', 'CharacterController@indexDeleted')->name('characters.index.deleted')->middleware('auth');
-Route::get('/characters', 'CharacterController@index')->name('characters.index')->middleware('auth');
-
-Route::get('/character/{character}/inventory', 'CharacterController@inventory')->name('character.inventory')->middleware('auth');
 
 Route::get('/bank', 'BankController@index')->name('bank.index');
 
@@ -65,7 +58,7 @@ Route::get('/about', 'AboutController@index')->name('about');
 
 Route::get('/item/{item}', 'ItemController@show')->name('item.show');
 
-Route::post('/import-data', 'ImportController@upload')->name('import.upload');
+Route::post('/import-tesodelve', 'ImportController@upload')->name('import.upload');
 Route::get('/import', 'ImportController@index')->name('import.index');
 
 Route::get('/home', 'SetController@mySets')->name('home.index')->middleware('auth');

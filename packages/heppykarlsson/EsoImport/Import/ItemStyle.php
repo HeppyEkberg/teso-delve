@@ -7,6 +7,11 @@ use App\Model\ItemStyle as ItemStyleModel;
 class ItemStyle
 {
 
+    static public function check($line)
+    {
+        return strpos($line, 'ITEMSTYLE:') !== false;
+    }
+
     public function process($line, $user, $itemStyles) {
         if(stripos($line, 'ITEMSTYLE:') === false) {
             return false;

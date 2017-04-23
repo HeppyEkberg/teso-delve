@@ -1,6 +1,5 @@
 .no-margin {
-  margin-top: 0px !important;
-  margin-bottom: 0px !important;
+  margin: 0px !important;
 }
 
 .margin-top-19 {
@@ -21,4 +20,14 @@
 
 .width-120 {
   max-width: 120px;
+}
+
+.content.no-margin {
+}
+
+.row-no-padding {
+  > [class*="col-"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
 }

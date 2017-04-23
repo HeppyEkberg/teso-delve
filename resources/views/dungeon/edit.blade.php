@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.admin')
 
 @section('meta-title')
     Edit dungeon {{$dungeon->name}} - @parent
@@ -6,7 +6,7 @@
 
 
 @section('content')
-    <div class="container">
+    <div class="container-fluid">
         <div class="row-fluid">
 
             <div class="col-md-9">

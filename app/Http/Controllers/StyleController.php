@@ -1,9 +1,9 @@
 <?php namespace App\Http\Controllers;
 
-
 use App\Model\Item;
 use App\Model\ItemStyle;
 use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Cache;
 
 class StyleController
@@ -29,11 +29,40 @@ class StyleController
             return $helmets_sorted;
         });
 
-        return view('item-styles.index', compact('itemStyles', 'helmets'));
+        $user = Auth::user();
+
+        $userMaterials = new Collection();
+        if($user) {
+            $userMaterials = $user->items()
+                ->whereIn('itemId', $itemStyles->pluck('material_id'))
+                ->get()
+                ->keyBy('id');
+        }
+
+        return view('item-styles.index', compact('itemStyles', 'helmets', 'userMaterials'));
     }
 
     public function show(ItemStyle $itemStyle) {
         $itemStyle->load('chapters.item');
+
+        $user = Auth::user();
+
+        $userMaterial = null;
+        if(!is_null($itemStyle->material_id) and $user) {
+            $userMaterial = $user->items()
+                ->where('itemId', $itemStyle->material_id)
+                ->get()
+                ->first();
+        }
+
+
+        $characters = null;
+        if($user) {
+            $characters = $user->characters()->with(['itemStyles' => function($query) use($itemStyle) {
+                $query->where('itemStyleId', $itemStyle->id);
+            }])->get();
+        }
+
 
         $armors = Cache::remember('armor-examples-' . $itemStyle->id, 120, function () use ($itemStyle) {
             $items = Item::where('itemStyleId', $itemStyle->id)->get();
@@ -56,7 +85,7 @@ class StyleController
             }
         }
 
-        return view('item-styles.show', compact('itemStyle', 'images', 'armors', 'weapons'));
+        return view('item-styles.show', compact('itemStyle', 'images', 'armors', 'weapons', 'userMaterial', 'characters'));
     }
 
 }

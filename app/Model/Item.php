@@ -4,6 +4,7 @@ namespace App\Model;
 
 use App\Enum\EquipType;
 use App\Enum\ItemType;
+use HeppyKarlsson\Sluggify\Traits\Sluggify;
 use Illuminate\Database\Eloquent\Model;
 
 /**
@@ -33,6 +34,7 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Item extends Model
 {
+    use Sluggify;
 
     protected $fillable = [
         'uniqueId',
@@ -49,6 +51,13 @@ class Item extends Model
         'type',
     ];
 
+    protected $sluggify = [
+        'slugs' => [
+            'slug' => ['id', 'name']
+        ],
+        'routeKey' => 'slug',
+    ];
+
     public function setNameAttribute($value) {
         $value = str_ireplace('^n', '', $value);
         $value = str_ireplace('^p', '', $value);
@@ -61,6 +70,10 @@ class Item extends Model
 
     public function character() {
         return $this->belongsTo(Character::class, 'characterId');
+    }
+
+    public function sales() {
+        return $this->hasMany(ItemSale::class);
     }
 
     public function setItemSet($setName) {
@@ -80,6 +93,14 @@ class Item extends Model
         }
 
         $this->setId = $set->id;
+    }
+
+    public function materialStyle() {
+        return $this->hasOne(ItemStyle::class, 'material_id');
+    }
+
+    public function itemStyleChapter() {
+        return $this->belongsToMany(ItemStyle::class, 'itemStyle_chapter', 'itemId', 'itemStyleId');
     }
 
     public function traitCategory() {

@@ -1,12 +1,9 @@
 <?php namespace App\Http\Controllers\Admin;
 
-use App\Enum\ArmorType;
 use App\Enum\CraftingItemsLevels;
 use App\Enum\CraftingType;
-use App\Enum\EquipType;
 use App\Enum\ItemStyleChapter;
 use App\Enum\ItemType;
-use App\Enum\WeaponType;
 use App\Http\Controllers\Controller;
 use App\Model\CraftingItem;
 use App\Model\CraftingTrait;
@@ -14,6 +11,7 @@ use App\Model\Item;
 use App\Model\ItemStyle;
 use App\Model\ItemStyleChapter as ItemStyleChapterModel;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 class CraftingController extends Controller
@@ -41,7 +39,12 @@ class CraftingController extends Controller
             ->take(50)
             ->get();
 
-        return view('admin.crafting.itemStyle', compact('itemStyle', 'motifs', 'chapters', 'assignedMotifs', 'items'));
+        $materials = Item::where('type', 44)
+            ->orderBy('name')
+            ->where('lang', App::getLocale())
+            ->get();
+
+        return view('admin.crafting.itemStyle', compact('itemStyle', 'motifs', 'chapters', 'assignedMotifs', 'items', 'materials'));
     }
 
     public function uploadImages(Request $request, ItemStyle $itemStyle) {
@@ -66,6 +69,7 @@ class CraftingController extends Controller
         $itemStyle->location = $data['location'];
         $itemStyle->isHidden = isset($data['isHidden']);
         $itemStyle->craftable = isset($data['craftable']);
+        $itemStyle->material_id = !empty($data['material_id']) ? $data['material_id'] : null;
 
         foreach($data['chapter'] as $chapterEnum => $itemId) {
             if(intval($itemId) === 0) {
